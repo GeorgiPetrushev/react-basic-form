@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 const FromStyle = styled.form`
   background-color: #FCEDDA;
+  border-radius: 0.5rem;
   margin: auto;
   margin-top: 10rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   max-width: 450px;
-  box-shadow: 20px 20px 50px 15px grey;
+  box-shadow: 10px 10px 50px 15px #FCEDDA;
 
   .form-register{
     color: white;
