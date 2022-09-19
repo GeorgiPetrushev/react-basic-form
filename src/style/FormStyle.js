@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FromStyle = styled.form`
-  background-color: #ee4e34;
+  background-color: #FCEDDA;
   margin: auto;
   margin-top: 10rem;
   text-align: center;
@@ -15,22 +15,33 @@ const FromStyle = styled.form`
     background-color: green;
     margin: auto;
     padding: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .empty-form-register{
+    height: 18px;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
   }
   .form-field {
-    margin: 1rem 5rem;
     height: 2rem;
     border-radius: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 0.3rem;
     font-size: 1.3rem;
     border: black 1px solid;
     font-family: 'Open Sans', sans-serif;
   }
-
+  .paragraph
+  {
+    color: #ee4e34;
+  }
+  .empty-paragraph{
+    height: 18px;
+  }
   .submit {
     min-width: 30%;
     height: auto;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
     &:hover{
         background-color: #e68e35;
