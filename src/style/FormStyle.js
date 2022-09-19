@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FromStyle = styled.form`
-  background-color: #FCEDDA;
+  background-color: rgb(56,56,56);
   border-radius: 0.5rem;
   margin: auto;
   margin-top: 10rem;
@@ -9,7 +9,7 @@ const FromStyle = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 450px;
-  box-shadow: 10px 10px 50px 15px #FCEDDA;
+  box-shadow: 10px 10px 50px 15px #F1E4DA;
 
   .form-register{
     color: white;
