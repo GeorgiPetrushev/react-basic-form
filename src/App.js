@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FromStyle from "./style/FormStyle";
 
 function App() {
@@ -23,13 +23,19 @@ function App() {
     setFormValue({ ...formValue, phoneNumber: e.target.value });
   };
 
+  useEffect(()=>{ 
+  console.log(submit);
+  },[submit])
+
+
   const runSubmit = (e) => {
     e.preventDefault();
     if (formValue.firstName && formValue.lastName && formValue.email) {
       setSubmit(!submit);
       setTimeout(() => {
-        setSubmit(!submit);
-      }, 1000);
+        setSubmit((prev)=>{ return !prev});
+
+      }, 2000);
       setFormValue({
         firstName: "",
         lastName: "",
